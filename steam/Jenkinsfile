@@ -15,5 +15,10 @@ pipeline {
                 '''
             }
         }
+        stage('Opinie graczy') {
+            steps {
+                powershell './steam/opinie.ps1'
+            }
+        }
     }
 }
